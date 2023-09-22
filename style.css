@@ -114,8 +114,15 @@ img {
 }
 .card__image__jonathan{
   background-image: url(https://media.licdn.com/dms/image/D4E03AQGHN9PQU5oL0g/profile-displayphoto-shrink_800_800/0/1678267418185?e=1700697600&v=beta&t=tMt7i7wGJZWiZlijtgOGdTh2r1ybpIMWsAasrPoC8Wc);
-}.card__image__camille{
+}
+.card__image__camille{
   background-image: url(https://media.licdn.com/dms/image/C4D03AQGR3N7oPtWBXg/profile-displayphoto-shrink_800_800/0/1612951907708?e=1700697600&v=beta&t=thN0nOuPPeF3P1vM8vaVnpYP9y_C1vzsl6eMLOiK-EU);
+}
+.card__image__zakaria{
+  background-image: url(https://media.licdn.com/dms/image/D4E35AQGFQZZYCOeSKw/profile-framedphoto-shrink_800_800/0/1680608441498?e=1695999600&v=beta&t=mvZ1JCltqHvuvvO5Cwq9vaa2ABZmjCleWte_yJE1scs);
+}
+.card__image__alexandre{
+  background-image: url(https://media.licdn.com/dms/image/C4D03AQEhSrs2F8Kv1w/profile-displayphoto-shrink_800_800/0/1646907985243?e=1700697600&v=beta&t=4J_IcYT2egnYomU84P2XFF2josLGYsh6m8f_lXN1xto);
 }
 
 
