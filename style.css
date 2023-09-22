@@ -17,10 +17,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+}
+
 
 main{
   display: flex;
-  flex-direction: column;}
+  flex-direction: column;
+  width: 20%;
+}
 
 img {
   height: auto;
@@ -102,7 +109,7 @@ img {
   background-image: url(https://media.licdn.com/dms/image/D4E03AQFYZ33KFZxxNQ/profile-displayphoto-shrink_800_800/0/1682181015546?e=1700697600&v=beta&t=0gPt_An2vNt-gfR5gsdV8MgpYTpa-mChN-LVD_SvrVY);
 }
 .card__image__audrey{
-  background-image: url(https://media.licdn.com/dms/image/D4E35AQFE7Z-bzdobew/profile-framedphoto-shrink_800_800/0/1672698193779?e=1695992400&v=beta&t=00dz1aleKUwcJbCT-WcJGru_F2_8eK2v3htP66A72QM);
+  background-image: url(https://avatars.githubusercontent.com/u/88105838?v=4);
 }
 .card__image__thomas{
   background-image: url(https://media.licdn.com/dms/image/C4E03AQEHgl7zMrio8g/profile-displayphoto-shrink_800_800/0/1614677595219?e=1700697600&v=beta&t=mlYJPJvNIC_uxkjyeIWd1YobyvPa1MJ4InScceJ_6uo);
@@ -153,3 +160,17 @@ img {
   margin-bottom: 1.25rem;
 }
 
+.main_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.map_container{
+    width: 60%;
+    height: auto;
+}
+
+.map_img{
+    width: 100%;
+    height: auto;
+}
