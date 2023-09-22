@@ -6,12 +6,7 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: #f0f0f0;
-}
-
 body {
-  color:gray;
   font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -22,32 +17,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+main{
+  display: flex;
+  flex-direction: column;}
+
 img {
   height: auto;
   max-width: 100%;
-  vertical-align: middle;
 }
 
-.btn {
-  background-color: white;
-  border: 1px solid rgb(225, 225, 225);
-  border-radius: 1rem;
-  color: rgb(106, 105, 105) ;
-  padding: 0.5rem;
-  text-transform: lowercase;
-}
-
-.btn--block {
-  display: block;
-  width: 100%;
-}
- 
 .cards {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 900px;
 }
 
 .cards__item {
@@ -70,24 +56,22 @@ img {
   overflow: hidden;
   &:hover {
     .card__image {
-      filter: contrast(100%);
+      filter: contrast(50%);
     }
   }
 }
 
 .card__content {
   display: flex;
-  flex: 1 1 auto;
   flex-direction: column;
   padding: 1rem;
 }
 
 .card__image {
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-radius: 0.25rem;
   filter: contrast(70%);
   filter: saturate(180%);
   overflow: hidden;
@@ -104,11 +88,39 @@ img {
     }
   }
 }
-.card__image--fence {
+.card__image__pierre{
   background-image: url(https://media.licdn.com/dms/image/D5603AQFTWWLF3oQh0g/profile-displayphoto-shrink_800_800/0/1665496487126?e=2147483647&v=beta&t=DozWpckYAkYvCigsZsZ2tl4NSesHwsz0PNw7m7jx6sM);
 }
+.card__image__ludovic{
+  background-image: url(https://media.licdn.com/dms/image/D4E35AQFKeRiR0yRVDw/profile-framedphoto-shrink_800_800/0/1683869134013?e=1695992400&v=beta&t=XnvvnJc-B2-I7nNFls_YfGAOuqUajdLYs-nI49lEGBI);
+}
 
-.card__title {
+.card__image__nassim{
+  background-image: url(https://media.licdn.com/dms/image/D4E03AQHJpGBpfo6hEQ/profile-displayphoto-shrink_800_800/0/1692090102840?e=1700697600&v=beta&t=RYaJffYPQnqVLXsIaTLiezUhvgEPVUYw8ZJtcjutwk4);
+}
+.card__image__melanie{
+  background-image: url(https://media.licdn.com/dms/image/D4E03AQFYZ33KFZxxNQ/profile-displayphoto-shrink_800_800/0/1682181015546?e=1700697600&v=beta&t=0gPt_An2vNt-gfR5gsdV8MgpYTpa-mChN-LVD_SvrVY);
+}
+.card__image__audrey{
+  background-image: url(https://media.licdn.com/dms/image/D4E35AQFE7Z-bzdobew/profile-framedphoto-shrink_800_800/0/1672698193779?e=1695992400&v=beta&t=00dz1aleKUwcJbCT-WcJGru_F2_8eK2v3htP66A72QM);
+}
+.card__image__thomas{
+  background-image: url(https://media.licdn.com/dms/image/C4E03AQEHgl7zMrio8g/profile-displayphoto-shrink_800_800/0/1614677595219?e=1700697600&v=beta&t=mlYJPJvNIC_uxkjyeIWd1YobyvPa1MJ4InScceJ_6uo);
+}
+.card__image__marine{
+  background-image: url(https://media.licdn.com/dms/image/D4E03AQFmbX6lwzdTFg/profile-displayphoto-shrink_800_800/0/1670926042356?e=1700697600&v=beta&t=9mPbuMQ9j9_FiJOyC-xywvxnzax9myyYeNmbiLfRAFE);
+}.card__image__theo{
+  background-image: url(https://media.licdn.com/dms/image/D4E35AQE_4D4H8IdwzQ/profile-framedphoto-shrink_800_800/0/1687850989081?e=1695996000&v=beta&t=Qzx0hnJ0L3p9W7EjS7PN1Ey-tbkJ9Gi984f64NeG7nU);
+}
+.card__image__jonathan{
+  background-image: url(https://media.licdn.com/dms/image/D4E03AQGHN9PQU5oL0g/profile-displayphoto-shrink_800_800/0/1678267418185?e=1700697600&v=beta&t=tMt7i7wGJZWiZlijtgOGdTh2r1ybpIMWsAasrPoC8Wc);
+}.card__image__camille{
+  background-image: url(https://media.licdn.com/dms/image/C4D03AQGR3N7oPtWBXg/profile-displayphoto-shrink_800_800/0/1612951907708?e=1700697600&v=beta&t=thN0nOuPPeF3P1vM8vaVnpYP9y_C1vzsl6eMLOiK-EU);
+}
+
+
+
+.card__title{
   color: gray;
   font-size: 1.25rem;
   font-weight: 300;
@@ -116,7 +128,16 @@ img {
   text-transform: uppercase;
 }
 
-.card__text {
+.card__city,
+.card__language{
+  color: gray;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text{
   flex: 1 1 auto;
   font-size: 0.875rem;
   line-height: 1.5;
