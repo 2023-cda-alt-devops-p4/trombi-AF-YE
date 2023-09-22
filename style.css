@@ -56,7 +56,7 @@ img {
   overflow: hidden;
   &:hover {
     .card__image {
-      filter: contrast(50%);
+      filter: contrast(100%);
     }
   }
 }
@@ -124,7 +124,9 @@ img {
 .card__image__alexandre{
   background-image: url(https://media.licdn.com/dms/image/C4D03AQEhSrs2F8Kv1w/profile-displayphoto-shrink_800_800/0/1646907985243?e=1700697600&v=beta&t=4J_IcYT2egnYomU84P2XFF2josLGYsh6m8f_lXN1xto);
 }
-
+.card__image__yassine{
+  background-image: url(https://media.licdn.com/dms/image/D4E03AQESvYIHXHd8sQ/profile-displayphoto-shrink_800_800/0/1683528669553?e=1700697600&v=beta&t=jA4KOB0TSa6pNyEiPJYOctC4X6fFdXfmpkWP_ceIpb8);
+}
 
 
 .card__title{
